@@ -1,0 +1,14 @@
+---
+- name: third play   #deleting newsshkey directory from local server
+  hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: pull from git
+      git:
+        repo: https://github.com/sambordoloi/test1.git
+        dest: /home/sam/testrepo1
+        update: yes
+        version: samtest    #to  checkout branch or name the branch from which pull code from a branch
+
+
+
