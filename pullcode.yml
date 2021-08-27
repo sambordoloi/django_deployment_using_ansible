@@ -1,9 +1,9 @@
 ---
-- name: third play   #deleting newsshkey directory from local server
+- name: first play   
   hosts: 127.0.0.1
   connection: local
   tasks:
-    - name: pull from git
+    - name: pull new from github
       git:
         repo: https://github.com/sambordoloi/test1.git
         dest: /home/sam/testrepo1
